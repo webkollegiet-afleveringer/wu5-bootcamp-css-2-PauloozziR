@@ -40,11 +40,17 @@ main {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: auto;
+    column-gap: 2%;
 }
-.first-col {
+/* #first-art-para {
+    background-image: linear-gradient(to right, red 10%, gray 90%);
+    -webkit-background-clip: text;
+    color: transparent; */ /* Optional: hides the original text color */
+/*}*/
+.main-first-col {
     grid-column: 1;
 }
-.second-col {
+.main-second-col {
     grid-column: 2;
 }
 
