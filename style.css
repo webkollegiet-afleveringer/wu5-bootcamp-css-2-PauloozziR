@@ -48,6 +48,11 @@ main {
 .second-col {
     grid-column: 2;
 }
-.first-art-para {
-    grid-row: 1;
+
+footer {
+    padding: 3% 10%;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
 }
