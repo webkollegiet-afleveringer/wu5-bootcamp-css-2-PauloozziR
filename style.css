@@ -20,15 +20,16 @@ header {
 ul {
     margin: 1%;
     list-style: none;
-    display: flex;
 }
 #top-list {
+    display: flex;
     justify-content: space-between;
 }
 #top-list i {
     padding-right: 1%;
 }
 #top-nav {
+    display: flex;
     justify-content: center;
     gap: 2%;
 }
@@ -56,3 +57,31 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
 }
+.foot-first-col {
+    grid-column: 1;
+}
+.foot-second-col {
+    grid-column: 2;
+}
+.foot-third-col {
+    grid-column: 3;
+}
+.foot-fourth-col {
+    grid-column: 4;
+}
+.foot-first-row {
+    grid-row: 1;
+}
+.foot-second-row {
+    grid-row: 2;
+}
+.address {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+/* .button {
+    line-height: 2.2rem;
+    width: 10vw;
+    height: 5vh;
+    background-color: whitesmoke;
+} */
