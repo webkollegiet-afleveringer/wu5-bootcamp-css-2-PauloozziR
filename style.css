@@ -11,8 +11,6 @@ a {
     text-decoration: none;
     color: #000;
 }
-#wrapper {
-}
 header {
     margin-top: 2rem;
     border-bottom: 1px solid lightgray;
@@ -38,7 +36,7 @@ li:first-of-type div {
     gap: 160%;
 }
 main {
-    padding: 15% 25% 0;
+    padding: 12rem 25% 8rem;
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: auto;
@@ -51,11 +49,27 @@ main {
 }
 
 footer {
-    padding: 3% 10%;
+    padding: 1.5rem 10%;
     background-color: lightgrey;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
+}
+h4, #h4 {
+    padding-bottom: 0.5rem;
+}
+#h4 {
+    padding-top: 0.5rem;
+}
+footer form {
+    margin-bottom: 2rem;
+}
+input {
+    padding: 3%;
+    border: none;
+}
+footer li {
+    padding: 0.1rem 0;
 }
 .foot-first-col {
     grid-column: 1;
@@ -67,6 +81,7 @@ footer {
     grid-column: 3;
 }
 .foot-fourth-col {
+    margin-left: 10%;
     grid-column: 4;
 }
 .foot-first-row {
@@ -75,13 +90,20 @@ footer {
 .foot-second-row {
     grid-row: 2;
 }
-.address {
+.foot-address {
     grid-column: 1 / -1;
     text-align: center;
 }
-/* .button {
+.foot-address hr {
+    border-color: #fff;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+}
+.mail-button {
+    margin-top: 1.5rem;
+}
+.mail-button a {
     line-height: 2.2rem;
-    width: 10vw;
-    height: 5vh;
+    padding: 0.5rem 1rem;
     background-color: whitesmoke;
-} */
+}
