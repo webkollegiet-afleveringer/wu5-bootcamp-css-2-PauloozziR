@@ -40,10 +40,6 @@ li:first-of-type div {
 }
 main {
     padding: 1rem 25% 8rem;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto;
-    column-gap: 2%;
 }
 #first-art-para {
     background-image: linear-gradient(to right, red 8%, gray 20%);
@@ -51,6 +47,31 @@ main {
     color: transparent;
     border-top: 100px solid lightgray;
     padding-top: 3rem;
+}
+#first-art {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+#first-art h1, #first-art p {
+    grid-column: 2;
+}
+#first-art-img-cap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: end;
+}
+#first-art-img-cap p:first-of-type {
+    grid-row: 1;
+}
+#first-art-img-cap p:last-of-type {
+    grid-row: 2;
+}
+#first-art-img-cap div {
+    grid-column: 2;
+    grid-row: 1/-1;
+    place-self: center;
 }
 .main-first-col {
     grid-column: 1;
@@ -75,10 +96,9 @@ main {
 }
 .small-round {
     color: #fff;
-    width: 2vw;
-    height: 3vh;
-    padding: 2%;
-    line-height: 1rem;
+    width: 20px;
+    height: 20px;
+    line-height: 1.2rem;
     border-radius: 50%;
 }
 .main-first-col .fa-envelope {
