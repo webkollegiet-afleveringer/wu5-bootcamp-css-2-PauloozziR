@@ -39,7 +39,7 @@ li:first-of-type div {
     gap: 160%;
 }
 main {
-    padding: 12rem 25% 8rem;
+    padding: 1rem 25% 8rem;
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: auto;
@@ -49,6 +49,8 @@ main {
     background-image: linear-gradient(to right, red 8%, gray 20%);
     -webkit-background-clip: text;
     color: transparent;
+    border-top: 100px solid lightgray;
+    padding-top: 3rem;
 }
 .main-first-col {
     grid-column: 1;
@@ -71,9 +73,22 @@ main {
 .underline {
     text-decoration: underline;
 }
-.fa-envelope {
+.small-round {
+    color: #fff;
+    width: 2vw;
+    height: 3vh;
+    padding: 2%;
+    line-height: 1rem;
+    border-radius: 50%;
+}
+.main-first-col .fa-envelope {
     background-color: gray;
-    border-radius: 25%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.main-first-col .fa-twitter {
+    background-color: lightskyblue;
+    font-size: 0.5rem;
 }
 .facebook-button {
     background-color: darkblue;
@@ -81,10 +96,10 @@ main {
 .twitter-button {
     background-color: lightskyblue;
 }
-.mail-button {
+.sec-mail-button {
     background-color: gray;
 }
-.facebook-button, .twitter-button, .mail-button {
+.facebook-button, .twitter-button, .sec-mail-button {
     padding: 0.5rem 2%;
     color: #fff;
 }
@@ -92,6 +107,7 @@ main {
     margin-right: 2%;
 }
 #abonnement-button {
+    color: #fff;
     background-color: red;
     padding: 0.5rem 10%;
 }
