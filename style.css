@@ -19,6 +19,9 @@ ul {
     margin: 1%;
     list-style: none;
 }
+button {
+    border: none;
+}
 #top-list {
     display: flex;
     justify-content: space-between;
@@ -42,21 +45,59 @@ main {
     grid-template-rows: auto;
     column-gap: 2%;
 }
-/* #first-art-para {
-    background-image: linear-gradient(to right, red 10%, gray 90%);
+#first-art-para {
+    background-image: linear-gradient(to right, red 8%, gray 20%);
     -webkit-background-clip: text;
-    color: transparent; */ /* Optional: hides the original text color */
-/*}*/
+    color: transparent;
+}
 .main-first-col {
     grid-column: 1;
 }
 .main-second-col {
     grid-column: 2;
 }
-
+.txt__gray {
+    color: gray;
+}
+.txt__lighter-gray {
+    color: darkgray;
+}
+.txt__red {
+    color: red;
+}
+.bold {
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}
+.fa-envelope {
+    background-color: gray;
+    border-radius: 25%;
+}
+.facebook-button {
+    background-color: darkblue;
+}
+.twitter-button {
+    background-color: lightskyblue;
+}
+.mail-button {
+    background-color: gray;
+}
+.facebook-button, .twitter-button, .mail-button {
+    padding: 0.5rem 2%;
+    color: #fff;
+}
+.facebook-button i, .twitter-button i {
+    margin-right: 2%;
+}
+#abonnement-button {
+    background-color: red;
+    padding: 0.5rem 10%;
+}
 footer {
     padding: 1.5rem 10%;
-    background-color: lightgrey;
+    background-color: lightgray;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -105,10 +146,10 @@ footer li {
     margin-top: 4rem;
     margin-bottom: 0.5rem;
 }
-.mail-button {
+.foot-mail-button {
     margin-top: 1.5rem;
 }
-.mail-button a {
+.foot-mail-button a {
     line-height: 2.2rem;
     padding: 0.5rem 1rem;
     background-color: whitesmoke;
