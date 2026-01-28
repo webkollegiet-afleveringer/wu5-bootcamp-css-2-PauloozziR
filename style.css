@@ -73,12 +73,6 @@ main {
     grid-row: 1/-1;
     place-self: center;
 }
-.main-first-col {
-    grid-column: 1;
-}
-.main-second-col {
-    grid-column: 2;
-}
 .txt__gray {
     color: gray;
 }
@@ -91,9 +85,6 @@ main {
 .bold {
     font-weight: bold;
 }
-.underline {
-    text-decoration: underline;
-}
 .small-round {
     color: #fff;
     width: 20px;
@@ -101,14 +92,35 @@ main {
     line-height: 1.2rem;
     border-radius: 50%;
 }
-.main-first-col .fa-envelope {
+#first-sec .fa-envelope {
     background-color: gray;
     font-size: 0.8rem;
     font-weight: bold;
 }
-.main-first-col .fa-twitter {
+#first-sec .fa-twitter {
     background-color: lightskyblue;
     font-size: 0.5rem;
+}
+#comments-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+#comments-sec #comments-date {
+    grid-column: 1;
+    grid-row: 1;
+}
+#comments-sec h4 {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+}
+#comments-sec hr {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+#comments-sec a {
+    grid-column: 2;
 }
 .facebook-button {
     background-color: darkblue;
@@ -126,10 +138,25 @@ main {
 .facebook-button i, .twitter-button i {
     margin-right: 2%;
 }
-#abonnement-button {
+#abonnement-sec button {
     color: #fff;
     background-color: red;
     padding: 0.5rem 10%;
+}
+#abonnement-sec a {
+    text-decoration: underline;
+}
+#art-gallery-sec {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+#art-gallery-sec p {
+    grid-column: 1/-1;
+}
+#art-gallery-sec hr {
+    grid-column: 1/-1;
+    grid-row: 2;
 }
 footer {
     padding: 1.5rem 10%;
