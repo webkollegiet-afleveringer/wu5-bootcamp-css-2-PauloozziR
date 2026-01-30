@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header {
+    margin-top: 2rem;
+    border-bottom: 1px solid lightgray;
+}
+ul {
+    margin: 1%;
+    list-style: none;
+}
+button {
+    border: none;
+}
+#top-list {
+    display: flex;
+    justify-content: space-between;
+}
+#top-list i {
+    padding-right: 1%;
+}
+#top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+li:first-of-type div {
+    display: flex;
+    gap: 160%;
+}
+main {
+    margin: 1rem 25% 8rem;
+    padding-top: 3rem;
+    border-top: 20vh solid lightgray;
+}
+#first-art-para {
+    background-image: linear-gradient(to right, red 10%, gray 12%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 33%;
+}
+#first-art {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+#first-art h1, #first-art p {
+    grid-column: 2;
+}
+#first-art-img-cap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: end;
+}
+#first-art-img-cap p:first-of-type {
+    grid-row: 1;
+}
+#first-art-img-cap p:last-of-type {
+    grid-row: 2;
+}
+#first-art-img-cap div {
+    grid-column: 2;
+    grid-row: 1/-1;
+    place-self: center;
+}
+.txt__gray {
+    color: gray;
+}
+.txt__lighter-gray {
+    color: darkgray;
+}
+.txt__red {
+    color: red;
+}
+.bold {
+    font-weight: bold;
+}
+.small-round {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 1.2rem;
+    border-radius: 50%;
+}
+#first-sec {
+    position: relative;
+    width: 25%;
+    top: -2.5rem;
+    display: inline-block;
+}
+#first-sec .fa-envelope {
+    background-color: gray;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#first-sec .fa-twitter {
+    background-color: lightskyblue;
+    font-size: 0.5rem;
+}
+#comments-sec {
+    position: relative;
+    left: 4%;
+    width: 70%;
+    display: inline-block;
+}
+#comments-sec h4 {
+    justify-self: end;
+}
+#comments-sec a {
+    display: inline-flex;
+}
+.facebook-button {
+    background-color: darkblue;
+}
+.twitter-button {
+    background-color: lightskyblue;
+}
+.sec-mail-button {
+    background-color: gray;
+}
+.facebook-button, .twitter-button, .sec-mail-button {
+    padding: 0.5rem 2%;
+    color: #fff;
+}
+.facebook-button i, .twitter-button i {
+    margin-right: 2%;
+}
+#abonnement-sec {
+    text-align: center;
+    position: relative;
+    left: 10%;
+}
+#abonnement-sec button {
+    color: #fff;
+    background-color: red;
+    padding: 0.5rem 10%;
+}
+#abonnement-sec a {
+    text-decoration: underline;
+}
+#art-gallery-sec {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+#art-gallery-sec p {
+    grid-column: 1/-1;
+}
+#art-gallery-sec hr {
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+footer {
+    padding: 1.5rem 10%;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+h4, #h4 {
+    padding-bottom: 0.5rem;
+}
+#h4 {
+    padding-top: 0.5rem;
+}
+footer form {
+    margin-bottom: 2rem;
+}
+input {
+    padding: 3%;
+    border: none;
+}
+footer li {
+    padding: 0.1rem 0;
+}
+.foot-first-col {
+    grid-column: 1;
+}
+.foot-second-col {
+    grid-column: 2;
+}
+.foot-third-col {
+    grid-column: 3;
+}
+.foot-fourth-col {
+    margin-left: 10%;
+    grid-column: 4;
+}
+.foot-first-row {
+    grid-row: 1;
+}
+.foot-second-row {
+    grid-row: 2;
+}
+.foot-address {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.foot-address hr {
+    border-color: #fff;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+}
+.foot-mail-button {
+    margin-top: 1.5rem;
+}
+.foot-mail-button a {
+    line-height: 2.2rem;
+    padding: 0.5rem 1rem;
+    background-color: whitesmoke;
+}
